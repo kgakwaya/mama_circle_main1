@@ -110,14 +110,7 @@ async function init() {
     const adminExists = await client.query(
       `SELECT id FROM users WHERE role = 'admin' LIMIT 1`
     );
-    if (adminExists.rows.length === 0) {
-      const hash = await bcrypt.hash('admin123', 10);
-      await client.query(
-        `INSERT INTO users (nickname, password, role) VALUES ($1, $2, 'admin')`,
-        ['Admin', hash]
-      );
-      console.log('✅  Default admin created  →  nickname: Admin  /  password: admin123');
-    }
+    
 
     // ── Create a general chat room if none exists ───────────────────────────
     const generalExists = await client.query(
