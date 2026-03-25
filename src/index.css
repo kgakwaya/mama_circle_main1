@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap');
+
+@theme {
+  --font-serif:   'Playfair Display', serif;
+  --font-cormorant: 'Cormorant Garamond', serif;
+  --font-jost:    'Jost', sans-serif;
+
+  --color-ivory:       #FAF7F2;
+  --color-ivory-mid:   #F2EDE4;
+  --color-ivory-dark:  #E8E0D4;
+  --color-cream:       #FFFDF9;
+
+  --color-rose-deep:   #8B3A52;
+  --color-rose-mid:    #B05670;
+  --color-rose-light:  #D4889A;
+  --color-rose-pale:   #F5E8EC;
+
+  --color-gold:        #A07840;
+  --color-gold-light:  #C9A96E;
+  --color-gold-pale:   #F5EDD8;
+
+  --color-charcoal:    #1C1410;
+  --color-ink:         #3A2D25;
+  --color-ink-mid:     #6B5A50;
+  --color-ink-soft:    #9B8880;
+
+  --color-sage:        #3D7A65;
+  --color-sage-light:  #E8F4F0;
+
+  --color-border-gold: rgba(160,120,64,0.22);
+  --color-border-rose: rgba(139,58,82,0.15);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Jost', sans-serif;
+  background-color: #FAF7F2;
+  color: #1C1410;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+*:focus-visible {
+  outline: 2px solid #B05670;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+@keyframes bounce {
+  0%, 80%, 100% { transform: translateY(0); }
+  40%           { transform: translateY(-5px); }
+}
+
+.animate-bounce-dot { animation: bounce 1s ease infinite; }
