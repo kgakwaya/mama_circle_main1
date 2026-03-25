@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState, useCallback } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { RootState, AppDispatch } from '../store';
+import type { RootState, AppDispatch } from '../store';
 import { fetchRooms, fetchMessages, fetchPsychologists, openDirectRoom, setActiveRoom } from '../store/slices/chatSlice';
 import { useWebSocket } from '../hooks/useWebSocket';
 import { MessageCircle, Users, Search, Send, Lock, Phone } from 'lucide-react';

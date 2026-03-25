@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate, useSearchParams, Link } from 'react-router-dom';
 import { login, register } from '../store/slices/authSlice';
-import { AppDispatch, RootState } from '../store';
+import type { AppDispatch, RootState } from '../store';
 import toast, { Toaster } from 'react-hot-toast';
 
 const Auth = () => {

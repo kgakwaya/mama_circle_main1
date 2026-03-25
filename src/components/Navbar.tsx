@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { RootState } from '../store';
+import type { RootState } from '../store';
 import { logout } from '../store/slices/authSlice';
 import { Home, Users, MessageCircle, LogOut, MessageSquare, ShieldCheck, Menu, X } from 'lucide-react';
 

@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { RootState } from '../store';
+import type { RootState } from '../store';
 import { MessageCircle, Users, BookOpen, MessageSquare, ShieldCheck } from 'lucide-react';
 
 const affirmations = [

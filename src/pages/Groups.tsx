@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchGroups, joinGroup } from '../store/slices/groupsSlice';
-import { RootState, AppDispatch } from '../store';
+import type { RootState, AppDispatch } from '../store';
 import { Users, UserPlus, ShieldCheck } from 'lucide-react';
 import toast, { Toaster } from 'react-hot-toast';
 

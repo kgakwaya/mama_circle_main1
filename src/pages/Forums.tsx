@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchPosts, createPost } from '../store/slices/forumsSlice';
-import { RootState, AppDispatch } from '../store';
+import type { RootState, AppDispatch } from '../store';
 import { MessageCircle, Send } from 'lucide-react';
 
 const labelCls = 'block font-jost text-[10px] tracking-[0.16em] uppercase text-ink-mid font-medium mb-1.5';
