@@ -148,7 +148,7 @@ const Admin = () => {
           </div>
         )}
 
-        {/* USERS */}
+        
         {tab === 'users' && (
           <div className="bg-cream border border-border-gold rounded-sm overflow-hidden overflow-x-auto">
             <table className="w-full border-collapse min-w-[600px]">
