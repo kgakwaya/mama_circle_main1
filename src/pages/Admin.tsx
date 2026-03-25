@@ -251,7 +251,7 @@ const Admin = () => {
           </div>
         )}
 
-        {/* ACTIVITY */}
+        
         {tab === 'activity' && (
           <div className="bg-cream border border-border-gold rounded-sm overflow-hidden">
             <div className="px-5 py-3.5 border-b border-border-gold bg-ivory flex items-center gap-2">
