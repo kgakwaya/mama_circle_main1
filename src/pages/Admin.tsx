@@ -221,7 +221,7 @@ const Admin = () => {
           </div>
         )}
 
-        {/* FLAGGED */}
+        
         {tab === 'flagged' && (
           <div>
             {flagged.length === 0 && (
