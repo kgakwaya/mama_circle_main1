@@ -1,4 +1,4 @@
-import React from 'react';
+import type { ReactElement } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import type { RootState } from './store';
@@ -14,10 +14,10 @@ import Admin     from './pages/Admin';
 function App() {
   const { user } = useSelector((state: RootState) => state.auth) as any;
 
-  const Private   = ({ children }: { children: JSX.Element }) =>
+  const Private   = ({ children }: { children: ReactElement }) =>
     user ? children : <Navigate to="/" replace />;
 
-  const AdminOnly = ({ children }: { children: JSX.Element }) =>
+  const AdminOnly = ({ children }: { children: ReactElement }) =>
     user?.role === 'admin' ? children : <Navigate to="/dashboard" replace />;
 
   return (
