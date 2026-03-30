@@ -2,7 +2,6 @@
 
 A digital support platform for African mothers navigating postpartum depression. Anonymous-first, mobile-first, Vercel + Node/Postgres.
 
-Live demo: https://mama-circle-main1.vercel.app/dashboard
 
 ---
 
@@ -60,7 +59,7 @@ npm run dev
 ```
 
 ### 7) Open
-http://localhost:5173
+ https://mama-circle-main1.vercel.app/dashboard
 
 ### 8) Admin test account
 - nickname: `admin`
